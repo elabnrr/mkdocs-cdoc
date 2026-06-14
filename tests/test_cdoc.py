@@ -25,7 +25,6 @@ from mkdocs_cdoc.plugin import (
 class TestCleanComment:
     def test_block_simple(self):
         assert clean_comment("/** Brief. */") == "Brief." 
-        assert False
 
     def test_block_multiline(self):
         raw = "/**\n * Line one.\n *\n * Line two.\n */"
